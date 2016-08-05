@@ -1,0 +1,416 @@
+@charset "utf-8";
+/* CSS Document */
+
+.flL {
+	float:left;
+}
+.flR {
+	float: right;
+}
+.clearfix:after {
+	display: block;
+	clear: both;
+	content: "";
+}
+.bold {
+	font-weight: bold;
+}
+.v-middle {
+ 	vertical-align: middle;
+}
+.v-bottom {
+	vertical-align: bottom;
+}
+.taR {
+	text-align: right;
+}
+.taC {
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: #666;
+}
+
+body,input {
+	font-family: Meiryo, sans-serif,"Hiragino Kaku Gothic ProN";
+}
+
+input:focus {
+	outline: 0px none black;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/*first-view
+============================================================================= */
+#first-view {
+	background: #182327;
+	overflow: hidden;
+	#header {
+		margin: 0 auto;
+		display: table;
+		height: 100%;
+		position: relative;
+		z-index: 100;
+		.container {
+			display: table-cell;
+			vertical-align: middle;
+			// position: relative;
+			// z-index: 10;
+			color: #fff;
+			text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+			text-align: center;
+		}
+		h1 {
+			font-size: 60px;
+		}
+		h2 {
+			font-size: 26px;
+			margin-top: 5px;
+		}
+		p {
+			margin-top: 20px;
+		}
+		.icon-list {
+			li {
+				display: inline-block;
+				font-size: 22px;
+				border: 4px double #4f5b60;
+				color: #abab81;
+				border-radius: 50%;
+				width: 28px;
+				height: 28px;
+				padding: 11px;
+				line-height: 28px;
+				background: transparent;
+				transition: all 0.2s ease;
+				margin: 22px 8px;
+				a {
+					color: #fff;
+				}
+			}
+		}
+	}
+	canvas {
+		position: absolute;
+		width:100%;
+		top: 0;
+	}
+}
+
+/*project-01
+============================================================================= */
+.project-01 {
+	background: url(../img/project_01.png) #fafafa;
+	background-size: 70%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	transition: 1s ease-in-out;
+    .info {
+		width: 50%;
+		float: right;
+		height: 100%;
+		background: rgba(198,198,198,.9);
+		padding: 80px;
+		display: table;
+		box-sizing: border-box;
+		.text {
+			display: table-cell;
+			vertical-align: middle;
+			h1 {
+				font-size: 3.725em;
+				line-height: 1.6;
+				margin: 0;
+				font-weight: 400;
+				font-family: 'Abril Fatface', cursive;
+				color: #fff;
+			}
+			p {
+				font-size: 1.2em;
+				line-height: 1.7;
+				margin: 0;
+				font-weight: 400;
+				width: 70%;
+				color: #fff;	
+			}
+			button {
+				background: #fff;
+				color: #676767;
+				border-radius: 40px;
+				font-size: 0.9em;
+				letter-spacing: 3px;
+				min-width: 150px;
+				max-width: 250px;
+				display: block;
+				padding: 0.8em 1.8em;
+				border: none;
+				margin: 1.8em 0;
+				cursor: pointer;
+				border: 1px solid #fff;
+				position: relative;
+				z-index: 2;
+			}
+			button,
+			button::before,
+			button::after {
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				-webkit-transition: all .3s;
+				transition: all .3s;
+			}
+			button:hover {
+				background: none;
+				color: #fff;
+			}
+			button:before {
+				right: 0;
+				border-radius: 0 40px 40px 0;
+			}
+			button:after {
+				left: 0;
+				border-radius: 40px 0 0 40px;
+			}
+			button:before,
+			button:after {
+				position: absolute;
+				z-index: -1;
+				display: block;
+				content: '';
+				top: 0;
+				width: 50%;
+				height: 100%;
+				background: #fff;
+			}
+			button:hover:before,
+			button:hover:after {
+				width: 0;
+				background: none;
+			}
+		}
+	}
+}
+
+/*project-02
+============================================================================= */
+.project-02 {
+	background: url(../img/project_02.png) #fafafa;
+	background-size: 70%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	transition: 1s ease-in-out;
+    .info {
+		width: 50%;
+		float: right;
+		height: 100%;
+		background: rgba(198,198,198,.9);
+		padding: 80px;
+		display: table;
+		box-sizing: border-box;
+		.text {
+			display: table-cell;
+			vertical-align: middle;
+			h1 {
+				font-size: 3.725em;
+				line-height: 1.6;
+				margin: 0;
+				font-weight: 400;
+				font-family: 'Abril Fatface', cursive;
+				color: #fff;
+			}
+			p {
+				font-size: 1.2em;
+				line-height: 1.7;
+				margin: 0;
+				font-weight: 400;
+				width: 70%;
+				color: #fff;	
+			}
+			button {
+				background: #fff;
+				color: #676767;
+				border-radius: 40px;
+				font-size: 0.9em;
+				letter-spacing: 3px;
+				min-width: 150px;
+				max-width: 250px;
+				display: block;
+				padding: 0.8em 1.8em;
+				border: none;
+				margin: 1.8em 0;
+				cursor: pointer;
+				border: 1px solid #fff;
+				position: relative;
+				z-index: 2;
+			}
+			button,
+			button::before,
+			button::after {
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				-webkit-transition: all .3s;
+				transition: all .3s;
+			}
+			button:hover {
+				background: none;
+				color: #fff;
+			}
+			button:before {
+				right: 0;
+				border-radius: 0 40px 40px 0;
+			}
+			button:after {
+				left: 0;
+				border-radius: 40px 0 0 40px;
+			}
+			button:before,
+			button:after {
+				position: absolute;
+				z-index: -1;
+				display: block;
+				content: '';
+				top: 0;
+				width: 50%;
+				height: 100%;
+				background: #fff;
+			}
+			button:hover:before,
+			button:hover:after {
+				width: 0;
+				background: none;
+			}
+		}
+	}
+}
+
+/*contact
+============================================================================= */
+.contant-wrapper {
+	background: #182327;
+	.contact {
+		margin: 0 auto;
+		display: table;
+		height: 100%;
+		.contact-inner {
+			display: table-cell;
+			vertical-align: middle;
+			text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+			text-align: center;
+			color: #fff;
+			h1 {
+				font-size: 3.725em;
+				line-height: 1.6;
+				margin: 0;
+				font-weight: 400;
+				font-family: 'Abril Fatface', cursive;
+				letter-spacing: 6px;
+			}
+			h2 {
+				margin-bottom: 50px;
+				line-height: 1.6;
+			}
+			.left-column {
+				float: left;
+				width: 400px;
+				margin-bottom: 30px;
+				p {
+					text-align: left;
+					margin-bottom: 15px;
+				}
+				input {
+					width: 100%;
+					margin-bottom: 22px;
+					padding: 5px;
+					background: #fff;
+					border: none;
+					padding: 10px;
+					border-radius: 5px;
+					-webkit-appearance: none;
+				}
+			}
+			.right-column {
+				float: right;
+				width: 400px;
+				margin-left: 50px;
+				p {
+					text-align: left;
+					margin-bottom: 10px;
+				}
+				textarea {
+					width: 100%;
+					height: 120px;
+					background: #fff;
+					border: none;
+					padding: 10px;
+					border-radius: 5px;
+					-webkit-appearance: none;
+				}
+			}
+			button {
+				background: #fff;
+				color: #676767;
+				border-radius: 40px;
+				font-size: 0.9em;
+				letter-spacing: 3px;
+				min-width: 150px;
+				max-width: 250px;
+				display: block;
+				padding: 0.8em 1.8em;
+				border: none;
+				margin: 1.8em 0;
+				cursor: pointer;
+				border: 1px solid #fff;
+				position: relative;
+				z-index: 2;
+				clear: both;
+				margin: 0 auto;
+			}
+			button,
+			button::before,
+			button::after {
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				-webkit-transition: all .3s;
+				transition: all .3s;
+			}
+			button:hover {
+				background: none;
+				color: #fff;
+			}
+			button:before {
+				right: 0;
+				border-radius: 0 40px 40px 0;
+			}
+			button:after {
+				left: 0;
+				border-radius: 40px 0 0 40px;
+			}
+			button:before,
+			button:after {
+				position: absolute;
+				z-index: -1;
+				display: block;
+				content: '';
+				top: 0;
+				width: 50%;
+				height: 100%;
+				background: #fff;
+			}
+			button:hover:before,
+			button:hover:after {
+				width: 0;
+				background: none;
+			}
+		}
+	}
+}
