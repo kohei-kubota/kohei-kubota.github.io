@@ -1,69 +1,87 @@
 /* CSS Document */
 .flL {
-  float: left; }
+  float: left;
+}
 
 .flR {
-  float: right; }
+  float: right;
+}
 
 .clearfix:after {
   display: block;
   clear: both;
-  content: ""; }
+  content: "";
+}
 
 .bold {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .v-middle {
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 .v-bottom {
-  vertical-align: bottom; }
+  vertical-align: bottom;
+}
 
 .taR {
-  text-align: right; }
+  text-align: right;
+}
 
 .taC {
-  text-align: center; }
+  text-align: center;
+}
 
 a {
   text-decoration: none;
-  color: #666; }
+  color: #666;
+}
 
 body, input {
-  font-family: Meiryo, sans-serif,"Hiragino Kaku Gothic ProN"; }
+  font-family: Meiryo, sans-serif,"Hiragino Kaku Gothic ProN";
+}
 
 input:focus {
-  outline: 0px none black; }
+  outline: 0px none black;
+}
 
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none; }
+  appearance: none;
+}
 
 /*first-view
 ============================================================================= */
 #first-view {
   background: #182327;
-  overflow: hidden; }
+  overflow: hidden;
+}
 #first-view #header {
   margin: 0 auto;
   display: table;
   height: 100%;
   position: relative;
-  z-index: 100; }
+  z-index: 100;
+}
 #first-view #header .container {
   display: table-cell;
   vertical-align: middle;
   color: #fff;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  text-align: center; }
+  text-align: center;
+}
 #first-view #header h1 {
-  font-size: 60px; }
+  font-size: 60px;
+}
 #first-view #header h2 {
   font-size: 26px;
-  margin-top: 5px; }
+  margin-top: 5px;
+}
 #first-view #header p {
-  margin-top: 20px; }
+  margin-top: 20px;
+}
 #first-view #header .icon-list li {
   display: inline-block;
   font-size: 22px;
@@ -76,13 +94,16 @@ select {
   line-height: 28px;
   background: transparent;
   transition: all 0.2s ease;
-  margin: 22px 8px; }
+  margin: 22px 8px;
+}
 #first-view #header .icon-list li a {
-  color: #fff; }
+  color: #fff;
+}
 #first-view canvas {
   position: absolute;
   width: 100%;
-  top: 0; }
+  top: 0;
+}
 
 /*project-01
 ============================================================================= */
@@ -92,7 +113,8 @@ select {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  transition: 1s ease-in-out; }
+  transition: 1s ease-in-out;
+}
 .project-01 .info {
   width: 50%;
   float: right;
@@ -100,24 +122,28 @@ select {
   background: rgba(198, 198, 198, 0.9);
   padding: 80px;
   display: table;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 .project-01 .info .text {
   display: table-cell;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 .project-01 .info .text h1 {
   font-size: 3.725em;
   line-height: 1.6;
   margin: 0;
   font-weight: 400;
   font-family: 'Abril Fatface', cursive;
-  color: #fff; }
+  color: #fff;
+}
 .project-01 .info .text p {
   font-size: 1.2em;
   line-height: 1.7;
   margin: 0;
   font-weight: 400;
   width: 70%;
-  color: #fff; }
+  color: #fff;
+}
 .project-01 .info .text button {
   background: #fff;
   color: #676767;
@@ -133,23 +159,32 @@ select {
   cursor: pointer;
   border: 1px solid #fff;
   position: relative;
-  z-index: 2; }
-.project-01 .info .text button, .project-01 .info .text button::before, .project-01 .info .text button::after {
+  z-index: 2;
+  outline: none;
+}
+.project-01 .info .text button,
+.project-01 .info .text button::before,
+.project-01 .info .text button::after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all .3s;
-  transition: all .3s; }
+  transition: all .3s;
+}
 .project-01 .info .text button:hover {
   background: none;
-  color: #fff; }
+  color: #fff;
+}
 .project-01 .info .text button:before {
   right: 0;
-  border-radius: 0 40px 40px 0; }
+  border-radius: 0 40px 40px 0;
+}
 .project-01 .info .text button:after {
   left: 0;
-  border-radius: 40px 0 0 40px; }
-.project-01 .info .text button:before, .project-01 .info .text button:after {
+  border-radius: 40px 0 0 40px;
+}
+.project-01 .info .text button:before,
+.project-01 .info .text button:after {
   position: absolute;
   z-index: -1;
   display: block;
@@ -157,45 +192,53 @@ select {
   top: 0;
   width: 50%;
   height: 100%;
-  background: #fff; }
-.project-01 .info .text button:hover:before, .project-01 .info .text button:hover:after {
+  background: #fff;
+}
+.project-01 .info .text button:hover:before,
+.project-01 .info .text button:hover:after {
   width: 0;
-  background: none; }
+  background: none;
+}
 
 /*project-02
 ============================================================================= */
 .project-02 {
-  background: url(../img/project_02.png) #fafafa;
+  background: url(../img/project_02.png) #151515;
   background-size: 70%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  transition: 1s ease-in-out; }
+  transition: 1s ease-in-out;
+}
 .project-02 .info {
   width: 50%;
   float: right;
   height: 100%;
-  background: rgba(198, 198, 198, 0.9);
+  background: rgba(21, 21, 21, 0.9);
   padding: 80px;
   display: table;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 .project-02 .info .text {
   display: table-cell;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 .project-02 .info .text h1 {
   font-size: 3.725em;
   line-height: 1.6;
   margin: 0;
   font-weight: 400;
   font-family: 'Abril Fatface', cursive;
-  color: #fff; }
+  color: #fff;
+}
 .project-02 .info .text p {
   font-size: 1.2em;
   line-height: 1.7;
   margin: 0;
   font-weight: 400;
   width: 70%;
-  color: #fff; }
+  color: #fff;
+}
 .project-02 .info .text button {
   background: #fff;
   color: #676767;
@@ -211,23 +254,32 @@ select {
   cursor: pointer;
   border: 1px solid #fff;
   position: relative;
-  z-index: 2; }
-.project-02 .info .text button, .project-02 .info .text button::before, .project-02 .info .text button::after {
+  z-index: 2;
+  outline: none;
+}
+.project-02 .info .text button,
+.project-02 .info .text button::before,
+.project-02 .info .text button::after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all .3s;
-  transition: all .3s; }
+  transition: all .3s;
+}
 .project-02 .info .text button:hover {
   background: none;
-  color: #fff; }
+  color: #fff;
+}
 .project-02 .info .text button:before {
   right: 0;
-  border-radius: 0 40px 40px 0; }
+  border-radius: 0 40px 40px 0;
+}
 .project-02 .info .text button:after {
   left: 0;
-  border-radius: 40px 0 0 40px; }
-.project-02 .info .text button:before, .project-02 .info .text button:after {
+  border-radius: 40px 0 0 40px;
+}
+.project-02 .info .text button:before,
+.project-02 .info .text button:after {
   position: absolute;
   z-index: -1;
   display: block;
@@ -235,42 +287,52 @@ select {
   top: 0;
   width: 50%;
   height: 100%;
-  background: #fff; }
-.project-02 .info .text button:hover:before, .project-02 .info .text button:hover:after {
+  background: #fff;
+}
+.project-02 .info .text button:hover:before,
+.project-02 .info .text button:hover:after {
   width: 0;
-  background: none; }
+  background: none;
+}
 
 /*contact
 ============================================================================= */
 .contant-wrapper {
-  background: #182327; }
+  background: #182327;
+}
 .contant-wrapper .contact {
   margin: 0 auto;
   display: table;
-  height: 100%; }
+  height: 100%;
+}
 .contant-wrapper .contact .contact-inner {
   display: table-cell;
   vertical-align: middle;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   text-align: center;
-  color: #fff; }
+  color: #fff;
+}
 .contant-wrapper .contact .contact-inner h1 {
   font-size: 3.725em;
   line-height: 1.6;
   margin: 0;
   font-weight: 400;
   font-family: 'Abril Fatface', cursive;
-  letter-spacing: 6px; }
+  letter-spacing: 6px;
+}
 .contant-wrapper .contact .contact-inner h2 {
   margin-bottom: 50px;
-  line-height: 1.6; }
+  line-height: 1.6;
+}
 .contant-wrapper .contact .contact-inner .left-column {
   float: left;
   width: 400px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+}
 .contant-wrapper .contact .contact-inner .left-column p {
   text-align: left;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+}
 .contant-wrapper .contact .contact-inner .left-column input {
   width: 100%;
   margin-bottom: 22px;
@@ -279,14 +341,17 @@ select {
   border: none;
   padding: 10px;
   border-radius: 5px;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+}
 .contant-wrapper .contact .contact-inner .right-column {
   float: right;
   width: 400px;
-  margin-left: 50px; }
+  margin-left: 50px;
+}
 .contant-wrapper .contact .contact-inner .right-column p {
   text-align: left;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+}
 .contant-wrapper .contact .contact-inner .right-column textarea {
   width: 100%;
   height: 120px;
@@ -294,7 +359,8 @@ select {
   border: none;
   padding: 10px;
   border-radius: 5px;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+}
 .contant-wrapper .contact .contact-inner button {
   background: #fff;
   color: #676767;
@@ -312,23 +378,31 @@ select {
   position: relative;
   z-index: 2;
   clear: both;
-  margin: 0 auto; }
-.contant-wrapper .contact .contact-inner button, .contant-wrapper .contact .contact-inner button::before, .contant-wrapper .contact .contact-inner button::after {
+  margin: 0 auto;
+}
+.contant-wrapper .contact .contact-inner button,
+.contant-wrapper .contact .contact-inner button::before,
+.contant-wrapper .contact .contact-inner button::after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all .3s;
-  transition: all .3s; }
+  transition: all .3s;
+}
 .contant-wrapper .contact .contact-inner button:hover {
   background: none;
-  color: #fff; }
+  color: #fff;
+}
 .contant-wrapper .contact .contact-inner button:before {
   right: 0;
-  border-radius: 0 40px 40px 0; }
+  border-radius: 0 40px 40px 0;
+}
 .contant-wrapper .contact .contact-inner button:after {
   left: 0;
-  border-radius: 40px 0 0 40px; }
-.contant-wrapper .contact .contact-inner button:before, .contant-wrapper .contact .contact-inner button:after {
+  border-radius: 40px 0 0 40px;
+}
+.contant-wrapper .contact .contact-inner button:before,
+.contant-wrapper .contact .contact-inner button:after {
   position: absolute;
   z-index: -1;
   display: block;
@@ -336,9 +410,12 @@ select {
   top: 0;
   width: 50%;
   height: 100%;
-  background: #fff; }
-.contant-wrapper .contact .contact-inner button:hover:before, .contant-wrapper .contact .contact-inner button:hover:after {
+  background: #fff;
+}
+.contant-wrapper .contact .contact-inner button:hover:before,
+.contant-wrapper .contact .contact-inner button:hover:after {
   width: 0;
-  background: none; }
+  background: none;
+}
 
 /*# sourceMappingURL=style.css.map */
