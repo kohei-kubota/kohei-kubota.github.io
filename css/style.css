@@ -74,13 +74,14 @@ select {
 }
 #first-view #header h1 {
   font-size: 60px;
+  font-family: 'Abril Fatface', cursive;
 }
 #first-view #header h2 {
   font-size: 26px;
   margin-top: 5px;
 }
 #first-view #header p {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 #first-view #header .icon-list li {
   display: inline-block;
@@ -335,40 +336,61 @@ select {
 }
 .contant-wrapper .contact .contact-inner .left-column {
   float: left;
-  width: 400px;
+  width: 420px;
   margin-bottom: 30px;
 }
 .contant-wrapper .contact .contact-inner .left-column p {
   text-align: left;
   margin-bottom: 15px;
 }
+.contant-wrapper .contact .contact-inner .left-column .caution {
+  margin-bottom: 22px;
+  display: block;
+}
 .contant-wrapper .contact .contact-inner .left-column input {
   width: 100%;
-  margin-bottom: 22px;
-  padding: 5px;
   background: #fff;
   border: none;
   padding: 10px;
   border-radius: 5px;
   -webkit-appearance: none;
+  box-sizing: border-box;
+}
+.contant-wrapper .contact .contact-inner .left-column .attention {
+  display: block;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+  border-radius: 0 0 5px 5px;
+  margin-top: -3px;
 }
 .contant-wrapper .contact .contact-inner .right-column {
   float: right;
-  width: 400px;
+  width: 420px;
   margin-left: 50px;
 }
 .contant-wrapper .contact .contact-inner .right-column p {
   text-align: left;
   margin-bottom: 10px;
 }
+.contant-wrapper .contact .contact-inner .right-column .caution {
+  display: block;
+}
 .contant-wrapper .contact .contact-inner .right-column textarea {
   width: 100%;
-  height: 120px;
+  height: 132px;
   background: #fff;
   border: none;
   padding: 10px;
   border-radius: 5px;
   -webkit-appearance: none;
+  box-sizing: border-box;
+}
+.contant-wrapper .contact .contact-inner .right-column .attention {
+  display: block;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+  border-radius: 0 0 5px 5px;
+  margin-top: -5px;
 }
 .contant-wrapper .contact .contact-inner button {
   background: #fff;
@@ -388,6 +410,7 @@ select {
   z-index: 2;
   clear: both;
   margin: 0 auto;
+  outline: none;
 }
 .contant-wrapper .contact .contact-inner button,
 .contant-wrapper .contact .contact-inner button::before,

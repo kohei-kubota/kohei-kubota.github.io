@@ -20,6 +20,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/stats.js/r14/Stats.min.js"></script>
 <script src="/js/view.js"></script>
 <script src="/js/window-height.js"></script>
+<script src="/js/form.js"></script>
 </head>
 <body>
 	<div id="first-view">
@@ -75,27 +76,29 @@
 				<h1>CONTACT</h1>
 				<h2>このWebサイトについて、私について、ただ挨拶するのみでも、<br>
 				なにかコメントがありましたら下記のフォームをご利用ください。</h2>
-				<form action="/contact" method="post">
+				<form action="/contact" method="post" id="form">
 					<div class="left-column">
 						<p>名前</p>
-						<input type="text" name="name" value="">
+						<span class="caution-name caution">
+							<input type="text" name="name" value="">
+						</span>
 						<p>メールアドレス</p>
-						<input type="email" name="email" value="">
+						<span class="caution-email caution">
+							<input type="email" name="email" value="">
+						</span>
 					</div>
 					<div class="right-column">
 						<p>メッセージ</p>
-						<textarea></textarea>
+						<span class="caution-contents caution">
+							<textarea name="contents"></textarea>
+						</span>
 					</div>
-					<button id="submit">
+					<button id="sub" type="submit">
 						Send
 					</button>
 				</form>
 			</div>
 		</div>
 	</div>
-
-
-
-
 </body>
 </html>

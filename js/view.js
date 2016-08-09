@@ -76,7 +76,7 @@ $(function() {
   function Dot(_x, _y){
     var hue = Math.random() * 360;
     this.color = "hsl("+Math.round(hue)+", 70%, 70%)";
-   console.log(this.color);
+   // console.log(this.color);
     this.x = _x;
     this.y = _y;
     this.v = prms.dotV;
